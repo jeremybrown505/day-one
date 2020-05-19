@@ -3,7 +3,10 @@ package edu.cnm.deepdive;
 public class TemperatureConversion {
 
   public static void main(String[] args) {
-  // Todo invoke conversion method with test values.
+    double c = 100;
+    double f = 32;
+    System.out.println("Celsius " + c + " = " + convertC2F(c) + "Fahrenheit");
+    System.out.println("Fahrenheit " + f + " = " + convertF2C(f) + "Celsius");
   }
 
   public static double convertC2F(double celsius) {
@@ -11,7 +14,7 @@ public class TemperatureConversion {
   }
 
   public static double convertF2C(double fahrenheit) {
-   return (fahrenheit - 32) * 5 / 9;
+    return (fahrenheit - 32) * 5 / 9;
   }
 
 }
